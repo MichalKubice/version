@@ -10,9 +10,9 @@ MongoClient.connect("mongodb://127.0.0.1:27017/Todos", (er,db)=>{
 
 
     console.log("Succesfully connected to MongoDb server");
-/*  db.collection("Todos").insertOne({
-    text: "Smth to do",
-    completed: false
+  db.collection("Users").insertOne({
+    name: "Valec",
+    age: 18
 
   }  ,(err,result) =>{
     if (err) {
@@ -20,6 +20,6 @@ MongoClient.connect("mongodb://127.0.0.1:27017/Todos", (er,db)=>{
     }
     console.log(JSON.stringify(result.ops,undefined,2) + "NICE");
   });
-  */
+
   db.close();
 });
